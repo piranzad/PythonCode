@@ -1,0 +1,9 @@
+def validate_zip_code(zip_code):
+    if len(zip_code) == 5 and zip_code.isdigit():
+        print(" %s is valid  Zip Code" % (zip_code))
+    else:
+        print(" %s is not valid  Zip Code" % (zip_code))
+
+
+zip = input("please enter")
+validate_zip_code(zip)
