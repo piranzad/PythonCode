@@ -1,0 +1,11 @@
+def validate_pin_code(PinCode):
+
+    if PinCode.isdigisdigit() == True:
+        if len(PinCode) == 4 or len(PinCode) == 6:
+            return True
+
+    return "is Not valid Pin Code"
+
+
+pin = input("please Enter Pincode : ")
+print(validate_pin_code(pin))

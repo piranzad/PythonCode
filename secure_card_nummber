@@ -1,0 +1,8 @@
+def sec_card_num(cardNum):
+    secCardN = ("*"*15) + cardNum[12:]
+    secCardN = "************" + cardNum[-4:]
+    return secCardN
+
+
+X = input("Please enter Your Text: ")
+print(sec_card_num(X))

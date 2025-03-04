@@ -1,0 +1,23 @@
+def compare_text():
+    text_nummber_one = input("Please enter Text One ")
+    text_nummber_two = input("Please enter Text two ")
+    if len(text_nummber_one) == len(text_nummber_two):
+        return True
+    else:
+        return False
+
+
+print(compare_text())
+
+
+# function definition
+def compare_text2(str1, str2, is_casesensitive=False):
+    if (is_casesensitive == True):
+        return str1 == str2
+    else:
+        return str1.lower() == str2.lower()
+
+
+# function call
+print(compare_text2("Blank Space", "blank space"))
+print(compare_text2("Blank Space", "blank space", True))

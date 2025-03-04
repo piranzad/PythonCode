@@ -1,0 +1,7 @@
+def FileName(fileExtenension):
+    file_ex = fileExtenension[len(fileExtenension)-3:]
+    return file_ex
+
+
+X = input("Please enter Your Text: ")
+print(FileName(X))
